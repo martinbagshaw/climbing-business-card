@@ -1,0 +1,120 @@
+body {
+  font-family: 'Signika Negative', arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.45;
+  font-weight: 400;
+  color: #4d4d4d;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  border: none; }
+  body * {
+    margin: 0;
+    padding: 0;
+    border: none; }
+
+#demo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  width: 100vw;
+  box-sizing: border-box;
+  padding: .75rem 1rem;
+  pointer-events: none;
+  background-color: rgba(255, 255, 255, 0.3); }
+  #demo p {
+    position: relative;
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.5em;
+    font-size: 4.25vw;
+    font-weight: 400; }
+    @media (max-width: 768px) and (orientation: landscape) {
+      #demo p {
+        font-size: 1.35em;
+        font-size: 2.75vw; } }
+    @media (min-width: 600px) {
+      #demo p {
+        font-size: 1.25em;
+        font-size: 3.25vw; } }
+    @media (min-width: 1024px) {
+      #demo p {
+        font-size: 1.98vw; } }
+
+#views {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  width: 100vw;
+  clear: both; }
+  #views .button {
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: 50%;
+    width: 50vw;
+    padding: .5em;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 3em;
+    font-size: 6vw;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all ease-in-out .3s; }
+    #views .button#button_front {
+      background-color: #900; }
+      #views .button#button_front:active, #views .button#button_front:focus, #views .button#button_front:hover, #views .button#button_front:not(.unclicked) {
+        color: #ffffff;
+        background-color: red; }
+    #views .button#button_rear {
+      background-color: #006b00; }
+      #views .button#button_rear:active, #views .button#button_rear:focus, #views .button#button_rear:hover, #views .button#button_rear:not(.unclicked) {
+        color: #ffffff;
+        background-color: #00b300; }
+  @media (max-width: 768px) and (orientation: landscape) {
+    #views {
+      top: 3.5rem;
+      left: auto;
+      right: 0;
+      width: auto; }
+      #views .button {
+        float: none;
+        display: block;
+        width: auto;
+        margin-top: 1rem;
+        padding: .5em;
+        font-size: 1.35em;
+        font-size: 2.75vw; } }
+  @media (min-width: 600px) {
+    #views .button {
+      font-size: 1.4em;
+      font-size: 3.6vw; } }
+  @media (min-width: 1024px) {
+    #views {
+      top: 14rem;
+      right: auto;
+      width: auto; }
+      #views .button {
+        float: none;
+        display: block;
+        width: auto;
+        margin-top: 1.5rem;
+        padding: .5em;
+        font-size: 1.25em;
+        font-size: 2vw; }
+        #views .button:first-child {
+          margin-top: 0; } }
+
+canvas {
+  width: 100%;
+  width: 100vw;
+  height: 100%;
+  height: 100vh;
+  background-color: #000000; }
+
+/*# sourceMappingURL=style.css.map */
