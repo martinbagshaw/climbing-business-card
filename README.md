@@ -1,3 +1,5 @@
 # 3D Business Card Model
-## Business Card for climbing instructor and route setter, Tom Hudson
-### note: - This needs to be hosted in order to work - same origin policy applies to the JSON model loader. Can use MAMP or XAMPP, for example.
+
+Business Card for climbing instructor and route setter, Tom Hudson
+
+Model made using [Blender](https://www.blender.org/), converted to JSON, and brought to life with [three.js](https://threejs.org/)
