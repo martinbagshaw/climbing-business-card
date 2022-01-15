@@ -12,4 +12,5 @@ Uses [http-server](https://www.npmjs.com/package/http-server) to run the model l
 _3D printed version_
 
 ![Three.js rendered climbing hold business card](three-js-model.png)
+
 _Three.js version_
