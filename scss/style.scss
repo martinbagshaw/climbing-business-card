@@ -1,0 +1,175 @@
+// variables
+$grey : #4d4d4d;
+$white : #ffffff;
+$black : #000000;
+$red : #900;
+$red_bright : red;
+$green : #006b00;
+$green_bright : #00b300;
+
+
+
+
+body {
+    font-family : 'Signika Negative', arial, sans-serif;
+    font-size : 16px;
+    line-height : 1.45;
+    font-weight : 400;
+    color : $grey;
+    position : relative;
+    overflow : hidden;
+    margin : 0;
+    padding : 0;
+    border : none;
+    * {
+        margin : 0;
+        padding : 0;
+        border : none;
+    }
+}
+
+
+
+
+// top instruction bar
+#demo {
+    position : absolute;
+    top : 0;
+    left : 0;
+    right : 0;
+    width : 100%;
+    width : 100vw;
+    box-sizing : border-box;
+    padding : .75rem 1rem;
+    pointer-events:none;
+    background-color : rgba($white, .3);
+    p {
+        position : relative;
+        text-align : center;
+        color : $white;
+        font-size : 1.5em;
+        font-size : 4.25vw;
+        font-weight : 400;
+        @media (max-width : 768px) and (orientation:landscape) {
+            font-size : 1.35em;
+            font-size : 2.75vw;
+        }
+        @media (min-width:600px){
+            font-size : 1.25em;
+            font-size : 3.25vw;
+        }
+        @media (min-width:1024px){
+            font-size : 1.98vw;
+            // font-size : 1.27em;
+        }
+    }
+
+}
+
+
+
+
+
+
+
+// view buttons
+#views {
+    position : absolute;
+    left : 0;
+    right : 0;
+    bottom : 0;
+    width : 100%;
+    width : 100vw;
+    clear : both;
+    .button {
+        position:relative;
+        display : inline-block;
+        float : left;
+        width : 50%;
+        width : 50vw;
+        padding : .5em;
+        box-sizing : border-box;
+        text-align : center;
+        font-size : 3em;
+        font-size : 6vw;
+        color : $white;
+        cursor : pointer;
+        transition : all ease-in-out .3s;
+        // front
+        &#button_front{
+            background-color : $red;
+            &:active,
+            &:focus,
+            &:hover,
+            &:not(.unclicked){
+                color : $white;
+                background-color : $red_bright;
+            }
+        }
+        // rear
+        &#button_rear{
+            background-color : $green;
+            &:active,
+            &:focus,
+            &:hover,
+            &:not(.unclicked){
+                color : $white;
+                background-color : $green_bright;
+            }
+        }
+
+    }
+
+    @media (max-width : 768px) and (orientation:landscape) {
+        top : 3.5rem;
+        left : auto;
+        right : 0;
+        width : auto;
+        .button {
+            float : none;
+            display : block;
+            width : auto;
+            margin-top : 1rem;
+            padding : .5em;
+            font-size : 1.35em;
+            font-size : 2.75vw;
+        }
+    }
+    @media (min-width:600px){
+        .button { 
+            font-size : 1.4em;
+            font-size : 3.6vw;
+        }
+    }
+    @media (min-width:1024px){
+        top : 14rem;
+        right : auto;
+        width : auto;
+        .button {
+            float : none;
+            display : block;
+            width : auto;
+            margin-top : 1.5rem;
+            padding : .5em;
+            font-size : 1.25em;
+            font-size : 2vw;
+            
+            &:first-child {
+                margin-top : 0;
+            }
+        }
+    }
+
+
+}
+
+
+
+// canvas - add the model
+canvas {  
+    width : 100%;
+    width : 100vw;
+    height : 100%;
+    height : 100vh;
+    background-color : $black;
+}
