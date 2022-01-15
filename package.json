@@ -1,0 +1,21 @@
+{
+  "name": "climbing-business-card",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d dist",
+    "start": "http-server ./dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gh-pages": "^3.1.0",
+    "three": "^0.127.0"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.0",
+    "webpack": "^5.28.0"
+  }
+}
